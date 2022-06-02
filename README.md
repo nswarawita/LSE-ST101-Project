@@ -2,19 +2,6 @@
 
 ## Project
 
-### 2020/21 Lent term
-
----
-
-The maximum mark for the project is 100
-
-* Due date: 5/5/2021 12noon
-* Hard deadline: 12/5/2021 12noon
-
-**It is a summative assessment and it accounts for 60% of your final grade.** Requests for extensions are only granted in exceptional circumstances. In particular, no extension will be granted for job related applications, late course add drop, clash with other course work, etc. 10 marks (out of 100 marks) will be deducted for late submission in every 24 hours. Any submission after the hard deadline will automatically receive 0 mark.
-
----
-
 ## Objectives
 
 The project serves as the most important coursework for us to assess your progress in the course in terms of:
@@ -135,9 +122,7 @@ For any other modules / libraries / data structure / unseen built-in methods tha
 * _Unless_ you are told otherwise / you have got the permission from the lecturer / it is your own work / it is for some additional features, you are _not_ allowed to use
     * Modules
     * Libraries
-    * Built-in functions (including methods) and types
-
-that are _not_ covered or seen in the course
+    * Built-in functions (including methods) and types that are _not_ covered or seen in the course
 * Your submission must be 100% your own work. It means that (_unless_ you are told otherwise):
     * All the code must be written by yourself
     * You cannot reference to _any_ materials for the problem solving logic (e.g. you cannot try to search "how to use Python to build index")
@@ -149,64 +134,6 @@ that are _not_ covered or seen in the course
 
 ---
 
-## Marking criteria
-
-Your grade will be given based on:
-
-| Criteria           | Details                                            |
-|:-------------------|:---------------------------------------------------|
-| Sanity             | Fulfil the required functionality                  |
-| Programming skills | Appropriate use the required programming concepts and tools |
-| Robustness         | Program handles wrong / large input appropriately, encapsulation and data integrity |
-| Readability        | Good variable, function, class and module names    |
-|                    | Every function, class and module _must_ have an _informative_ docstring |
-|                    | Appropriate comments                               |
-| Style              | Follow the [PEP 8 style](https://www.python.org/dev/peps/pep-0008/) highlighted in the course, and prevent dangerous code like using built-in function names as variable names |
-| Program design     | Decomposition and abstraction: use of functions, modules and classes to decompose the problems, structure your code and make your code manageable for a relatively complex problem |
-|                    | Easy to maintain - prevent redundant, unnecessary or copy-and-paste code |
-| Testing            | Appropriate use of testing (glass box and / or black box approach) to make sure your program works as intended |
-| Self learning      | Learn how to use an unseen library to solve the problem in hand|
-| Analysis           | Sensible and motivated data / performance analysis.  Reflection on limitations and possible improvements on the program design and implementation |
-| Communication      | Clear and sensible structure with introduction and conclusion, effective communication (including effective use of Jupyter Notebook)|
-
-You need to have the characteristics below to get the corresponding mark:
-
-| Mark | Characteristics                                           |
-|:-----|:----------------------------------------------------------|
-|85-100| Excellent understanding of course materials: appropriate and effective use of all the tools required |
-|      | Excellent coding skills: code executes (nearly) perfectly and  well-designed with good readability and style, with appropriate (and ideally thorough) testing and robust code development |
-|      | Go further and beyond: demonstrate the self learning skill with effective use of unseen libraries and implementing sensible improvements and additional functionality to the program |
-|      | Sensible analysis: (if performance analysis is done) reflection on the implementation of the program based on the design and the experiment result. Explain the result with the concepts we have learned in this course like time complexity or programming paradigms, or other relevant concepts you have learned from somewhere else. |
-|      | Sensible analysis: (if data analysis is done) relevant, appropriate and well-motivated data analysis with reflection on the results and limitations. While due to the time limit the analysis may not be very thorough, some meaningful results are expected (showing something that is not working also counts) |
-|      | Well written report: effective communication with clear explanation of the program design, appropriate examples showing _how_ the program works, effective presentation of the results and a good conclusion about possible improvements |
-|70-84 | Excellent understanding of course materials: appropriate and effective use of all the tools required |
-|      | Excellent coding skills: code executes (nearly) perfectly, well-designed with good readability and style, with appropriate testing and robust code development |
-|      | Self learning skill: effective use of one or more unseen libraries |
-|      | Sensible analysis: (if performance analysis is done) effective performance analysis and reflection on the program design |
-|      | Sensible analysis: (if data analysis is done) relevant, appropriate and well-motivated data analysis with reflection on the results and limitations |
-|      | Well written report: effective communication with clear explanation of the program design, appropriate examples showing _how_ the program works, effective presentation of the results and a good conclusion about possible improvements |
-|60-69 | Good understanding of course materials: appropriate use of most of the tools required |
-|      | Good code skills: code executes mostly fine, generally well-designed with relatively good readability and style, with appropriate testing |
-|      | Self learning skill: good use of one or more unseen libraries |
-|      | Sensible analysis: appropriate performance or data analysis |
-|      | Good report: good structure of the report with good explanation of the program design with some examples to show the program is working. Clear presentation of the results |
-|50-59 | Generally good understanding of course materials: appropriate use of majority of the tools required |
-|      | Good code skills: code executes and fulfil majority of the requirements, showing the ability to solve problems with programming. Acceptable readability and style with some testing |
-|      | Self learning skill: using one or more appropriate unseen libraries in the right direction |
-|      | Analysis: sensible performance or data analysis in the right direction |
-|      | Good report: good explanation on the program design with some examples to show the program is working. Clear presentation of the results |
-|40-49 | understanding of course materials: able to use the majority of the tools required |
-|      | Coding skills: code may not run correctly but demonstrates some good understanding of the syntax and concepts, with an attempt to have the right readability, style, testing etc. |
-|      | Self learning skill: good attempt to use one or more appropriate unseen libraries |
-|      | Analysis: good attempt to do a sensible analysis |
-|      | Report: provide explanation of the program design with some examples on using the code. Analysis results included |
-|0-39  | Poor understanding of course materials: not able to correctly use the majority of the tools required |
-|      | Poor code skills: code does not work, or demonstrates a lack of knowledge of basic syntax and concepts, poor readability and style. No testing or wrong testing |
-|      | Poor self learning skill: wrong use or does not show the effort of using any unseen library appropriately |
-|      | Poor analysis: no attempt to do the analysis or the analysis is not sensible |
-|      | Poor report: Poor structure and ineffective communication. Some parts like analysis results or explanation of the program is missing |
-
----
 
 ## Note
 
