@@ -1,0 +1,86 @@
+from text_analysis import clean_phrase
+
+def remove_duplicates(inverted_index):
+    '''
+    if the same word stem occurs multiple times in the same show, the duplicates are removed           
+
+    Parameters
+    ----------
+    inverted_index : dict
+        the inverted index with possible duplicates.
+
+    Returns
+    -------
+    inverted_index : dict
+        the inverted index without duplicates
+
+    '''
+    for key in inverted_index:
+        inverted_index[key] = set(inverted_index[key]) 
+    return inverted_index
+
+
+def create_inverted_index(df):
+    '''
+    Creates an inverted index for the dataframe that was provided
+
+    Parameters
+    ----------
+    df : pandas dataframe
+      each row contains the information about title, type, director, cast, year added, rating, duration, genre, description
+
+    Returns
+    -------
+    dict,
+    an inverted index corresponding to the provided dataframe. The keys are the words that occur in the dataframe. The values are a set of the integers that correspond to the row of the df that contains the word 
+    
+
+    '''
+    inverted_index = {}
+    for i in range(len(df)):
+        for j in range(len(df.columns)):
+            try:
+                cleaned_words = clean_phrase(df.iloc[i,j]) # Cleaned_words is a list of word stems
+                for word in cleaned_words:
+                    if word in inverted_index.keys():
+                        inverted_index[word].append(i)                       
+                    else: 
+                        inverted_index[word] = [i]                        
+            except:
+                ValueError
+                pass
+    
+    index = remove_duplicates(inverted_index) 
+    return index   
+
+
+def add_to_inverted_index(inverted_index, phrase, show_index):
+    '''
+    Adds a phrase to an existing inverted index
+
+    Parameters
+    ----------
+    inverted_index : dict
+        the existing inverted index to which entries should be added
+    phrase : str
+        the phrase that needs to be added to the inverted_index
+    show_index : int
+        the key value corresponding to the show in the dictionary that contains the indexes of all the shows 
+
+    Returns
+    -------
+    None.
+
+    '''
+    try:
+        cleaned_words = clean_phrase(phrase) # this is a list of all the cleaned words
+        for word in cleaned_words:
+            if word not in inverted_index.keys(): 
+                inverted_index[word] = [show_index]
+            else:
+                inverted_index[word].append(show_index)
+    except:
+        pass
+    
+    index = remove_duplicates(inverted_index)            
+    return index 
